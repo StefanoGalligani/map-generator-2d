@@ -1,0 +1,32 @@
+cambiare funzione hash per la seed da string a int (una che ritorni uint)
+	nella classe SeedSingleton
+monobehaviour della classe con la seed e il contatore (con anche i metodi con le coordinate in cui non si usa il contatore)
+	che ha un'istanza della classe con la seed, e un contatore
+	che usa la classe statica senza seed
+---
+
+provare a spostare la posizione delle zone nel punto medio dei vertici e poi ricalcolare la tassellatura
+	eventualmente ricalcolare le zone e la tassellatura altre n volte
+
+aggiungere parametro di distanza minima tra zone
+	(comunque dopo un po' di iterazioni se non si trova la posizione prendere quella migliore)
+Mappe meno rettangolari, e mappe tonde più rotondeggianti (più bordi con l'aumentare delle zone)
+Mappe tonde devono essere proprio cerchi se le dimensioni sono uguali, e essere più strette del loro rapporto solo quando le dimensioni sono un rettangolo
+
+---
+suddividere le varie classi in namespace diversi
+---
+
+Laghi migliorati (forma più circolare per i bordi connessi solo a una zona)
+	generare zone di bordo in tutti i baricentri dei triangoli connessi a una data zona?
+Ponti tra zone separate dai laghi
+	considerare sia tante zone connesse in cerchio sia gruppi di zone separati tra loro (unionFind?)
+	pensare a come salvare le informazioni dei ponti
+		(nuova classe che contiene le due zone? le due zone risultano collegate? forse meglio di no per via dei controlli tra vertici in comune)
+		considerare anche il salvataggio su file
+---
+outline sottile dei poligoni per distinguerli
+	shader oppure
+	poligoni un po' sollevati e separati da concavità (tipo i tasti di una tastiera meccanica)
+
+
